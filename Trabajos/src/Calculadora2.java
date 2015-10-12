@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import javax.swing.*;
 
 
 public class Calculadora2 {
@@ -7,14 +8,15 @@ public class Calculadora2 {
 		// TODO Auto-generated method stub}
 		
 		
-		int opcion = 0 ;
+		String opcion;
 		int num1= 0 ;
 		int num2= 0 ;
 		double resultado = 0;
 		
-		Scanner teclado = new Scanner(System.in);
 		
 		do {
+			
+			opcion=JOptionPane.showInputDialog("Hola");
 			
 			System.out.println("Ingrese una opcion");
 			System.out.println("1.- Sumar 2 numeros");
